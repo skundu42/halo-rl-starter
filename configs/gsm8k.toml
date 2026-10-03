@@ -1,0 +1,14 @@
+# Change these IDs to use your own HF model and numeric-answer dataset.
+model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+model_revision = "7ae557604adf67be50417f59c2c2f167def9a775"
+dataset_name = "openai/gsm8k"
+dataset_config = "main"
+dataset_revision = "740312add88f781978c0658806c59bc2815b9866"
+dataset_train_split = "train"
+dataset_eval_split = "test"
+prompt_field = "question"
+answer_field = "answer"
+answer_delimiter = "####"
+dataset_train_limit = 2048
+max_new_tokens = 64
+# Unspecified training settings inherit Config's conservative defaults.

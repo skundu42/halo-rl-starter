@@ -1,0 +1,18 @@
+# One 24+ GB NVIDIA GPU. All settings are snapshotted into the run directory.
+model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+model_revision = "7ae557604adf67be50417f59c2c2f167def9a775"
+seed = 42
+rounds = 5
+prompts_per_round = 32
+num_generations = 4
+eval_size = 64
+max_operand = 30
+max_new_tokens = 48
+max_prompt_tokens = 512
+enable_thinking = false
+learning_rate = 0.000005
+gradient_accumulation_steps = 4
+lora_rank = 16
+lora_alpha = 32
+lora_target_modules = ["q_proj", "v_proj"]
+# No dataset_name means synthetic tasks. See gsm8k.toml for Hugging Face datasets.

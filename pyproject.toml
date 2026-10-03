@@ -1,0 +1,15 @@
+[project]
+name = "halo-arithmetic-demo"
+version = "0.1.0"
+description = "A single-GPU RL environment showcasing White Circle Halo"
+requires-python = ">=3.12"
+# ML dependencies come from the pinned Halo container, never the unrelated PyPI halo package.
+dependencies = []
+
+[tool.ruff]
+target-version = "py312"
+line-length = 119
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
